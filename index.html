@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;1,100&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id="app">
@@ -22,7 +24,18 @@
                     <li><i class="fab fa-pinterest"></i></li>
                  </ul>
             </div>
-            <div class="nav_header_bottom"></div>
+            <div class="nav_header_bottom flex">
+                <img src="assets/img/cropped-Group-39-2x.png" alt="Logo" class="logo">
+                <div>
+                    <ul class="menu_nav flex">
+                        <li v-for="menu in menu_nav">{{menu}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <button>Purchase</button>
+                    <i class="fas fa-search search"></i>
+                </div>
+            </div>
         </header>
         <main>
             <section>
