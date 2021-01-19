@@ -6,7 +6,7 @@
 /* UTILITY */
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .flex{
@@ -17,6 +17,7 @@ body{
 /* HEADER */
 
 header{
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -36,20 +37,20 @@ header{
     margin-left: 50px;
 }
 
-.social_icon{
+.social_icon_header {
     list-style: none;
     margin-right: 50px;
 }
 
-.social_icon li{
+.social_icon_header  li{
     color: white;
     cursor: pointer;
 }
-.social_icon li:nth-child(2){
+.social_icon_header  li:nth-child(2){
     padding: 0 20px;
 }
 
-.social_icon li:hover{
+.social_icon_header  li:hover{
     color: #00D9A6;
 }
 /* //NAV_HEADER_TOP */
@@ -57,6 +58,7 @@ header{
 
 /* NAV_HEADER_BOTTOM */
 .nav_header_bottom{
+    background-color: white;
     height: 120px;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +84,7 @@ header{
 }
 
 .menu_nav li:first-child{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .nav_header_bottom button{
@@ -107,3 +109,56 @@ header{
 /* //NAV_HEADER_BOTTOM */
 
 /* //HEADER */
+
+/* MAIN */
+.main_container{
+    margin-top: 160px;
+}
+
+/* SECTION1 */
+.section1{
+    background-color: #f5f5f5;
+    height: 1120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section1 img{
+    z-index: 0;
+    /* width: 1120px; */
+    width: 1430px;
+    z-index: 0;
+    position: absolute;
+    top: -50px;
+    right: -300px;
+}
+
+.section1 h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.selector_img_section1{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: black;
+}
+
+.selector_img_section1 .button_selector{
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+.selector_img_section1 .button_selector.active{
+    background-color: rgba(140,225,100,1);
+}
+/* //SECTION1 */
+.section2{
+    background-color: yellow;
+    height: 100vh;
+}
+
+
+
+/* //MAIN */
