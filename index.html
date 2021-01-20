@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id="app">
@@ -42,20 +40,27 @@
         <main class="main_container">
             <section class="section1 flex">
                 <div class="container_section1">
-                    <img :src="img_section1[counter]" alt="" class="active">
-                    <div class="text_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
-                        <div v-for="text in text">
-                            <h4>{{text.h4}}</h4>
-                            <h1 v-html="text.h1"></h1>
-                            <hr>
-                            <p v-html="text.p"></p>
-                        </div>
-                        <button>READ MORE</button>
-                        <ul class="social_icon_section1">
-                            <li v-for="social in social_icon_section1">{{social}}</li>
-                        </ul>
-                        <div class="selector_img_section1">
-                            <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
+                    <div class="text_section">
+                        <img :src="img_section1[counter]" alt="" class="active">
+                            <div class="text_data_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
+                                <div v-for="text in text" class="data_section1 flex">
+                                    <h4>{{text.h4}}</h4>
+                                    <h1 v-html="text.h1"></h1>
+                                    <div class="divider">&nbsp</div>
+                                    <p v-html="text.p"></p>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button_read">READ MORE</button>
+                                <div class="social_selector flex">
+                                    <ul class="social_icon_section1 flex">
+                                        <li v-for="social in social_icon_section1">{{social}}</li>
+                                    </ul>
+                                    <div class="selector_img_section1 flex">
+                                        <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
