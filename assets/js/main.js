@@ -39,8 +39,13 @@ let app = new Vue ({
                 } 
             }
         ],
-        
-        social_icon_section1 : ["FACEBOOK","INSTAGRAM","YOUTUBE","TWITTER"] 
+        social_icon_section1 : [
+            "FACEBOOK","INSTAGRAM","YOUTUBE","TWITTER"
+        ],
+        text_section2 : 
+        {
+            h2: "We Are Here To<br> Make Your <span class='agency_color'>Website</span><br>Look More <span class='agency_color'>Elegant</span><br>And Stylish!"
+        }, 
     },
     methods: {
         next(){

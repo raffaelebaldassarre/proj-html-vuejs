@@ -40,7 +40,7 @@
         <main class="main_container">
             <section class="section1 flex">
                 <div class="container_section1">
-                    <div class="text_section">
+                    <div class="text_section1">
                         <img :src="img_section1[counter]" alt="" class="active">
                             <div class="text_data_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
                                 <div v-for="text in text" class="data_section1 flex">
@@ -61,11 +61,25 @@
                                     </div>
                                 </div>
                             </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="container_section2 flex">
+                    <div class="container_text_section2">
+                        <h2 v-html="text_section2.h2"></h2>
+                        <div class="divider">&nbsp</div>
+                    </div>
+                    <div class="container_card_section2">
+                        <div class="card_section2 flex">
+                            <div class="card"><i></i><h4>Speed Optimization</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
+                            <div class="card"><i></i><h4>Cloud Solutions</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
+                            <div class="card"><i></i><h4>Website Design</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
+                            <div class="card"><i></i><h4>Online Marketing</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section2"></section>
             <section></section>
             <section></section>
             <section></section>
