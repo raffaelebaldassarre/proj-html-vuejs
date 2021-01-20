@@ -40,18 +40,24 @@
             </div>
         </header>
         <main class="main_container">
-            <section class="section1">
-                <img :src="img_section1[counter]" alt="" class="active">
-                <h4>17 YEARS OF EXPERIENCE</h4>
-                <h1>We Are a <br> Wer Design <span>Agency</span></h1>
-                <hr>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.</p>
-                <button>READ MORE</button>
-                <ul class="social_icon_section1">
-                    <li v-for="social in social_icon_section1">{{social}}</li>
-                </ul>
-                <div class="selector_img_section1">
-                    <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
+            <section class="section1 flex">
+                <div class="container_section1">
+                    <img :src="img_section1[counter]" alt="" class="active">
+                    <div class="text_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
+                        <div v-for="text in text">
+                            <h4>{{text.h4}}</h4>
+                            <h1 v-html="text.h1"></h1>
+                            <hr>
+                            <p v-html="text.p"></p>
+                        </div>
+                        <button>READ MORE</button>
+                        <ul class="social_icon_section1">
+                            <li v-for="social in social_icon_section1">{{social}}</li>
+                        </ul>
+                        <div class="selector_img_section1">
+                            <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section2"></section>

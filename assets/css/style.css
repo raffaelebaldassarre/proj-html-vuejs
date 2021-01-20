@@ -121,6 +121,7 @@ header{
     height: 1120px;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .section1 img{
@@ -151,7 +152,25 @@ header{
 }
 
 .selector_img_section1 .button_selector.active{
-    background-color: rgba(140,225,100,1);
+    background: -webkit-linear-gradient(90deg,rgba(140,225,100,1), rgba(78,221,129,1));
+}
+
+.text_section1{
+    display: none;
+}
+
+.text_section1.active{
+    display: block;
+}
+
+.text_section1 h4{
+    background: -webkit-linear-gradient(rgba(140,225,100,1), rgba(78,221,129,1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.agency_color{
+    color: #00D9A6;
 }
 /* //SECTION1 */
 .section2{
