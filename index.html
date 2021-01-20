@@ -38,8 +38,8 @@
             </div>
         </header>
         <main class="main_container">
-            <section class="section1 flex">
-                <div class="container_section1">
+            <section id="section1">
+                <div class="container_section1 flex">
                     <div class="text_section1">
                         <img :src="img_section1[counter]" alt="" class="active">
                             <div class="text_data_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section2">
+            <section id="section2">
                 <div class="container_section2 flex">
                     <div class="container_text_section2 flex">
                         <h2 v-html="text_section2.h2"></h2>
@@ -82,7 +82,25 @@
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section id="section3">
+                <div class="container_section3 flex">
+                    <div class="container_img_section3">
+                        <div class="busy-arch">
+                            <img src="assets/img/busy-architect-PYVKWM4-1024x872.jpg" alt="" id="busy-arch">
+                            <div class="overlay"></div>
+                        </div>
+                        <img src="assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" id="business-woman" alt="">
+                    </div>
+                    <div class="container_text_section3 flex">
+                        <div class="data_text_section3">
+                            <h3 v-html="text_section3.h3"></h3>
+                            <div class="divider">&nbsp</div>
+                            <p v-html="text_section3.p"></p>
+                            <button class="button_section">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section></section>
             <section></section>
             <section></section>
