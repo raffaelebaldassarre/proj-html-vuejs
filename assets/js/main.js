@@ -45,7 +45,41 @@ let app = new Vue ({
         text_section2 : 
         {
             h2: "We Are Here To<br> Make Your <span class='agency_color'>Website</span><br>Look More <span class='agency_color'>Elegant</span><br>And Stylish!"
-        }, 
+        },
+        card_section2 : [
+            {
+                card_section2_1 :
+                {
+                i : "<i class='fas fa-tachometer-alt'></>",
+                h2 : "Speed Optimization",
+                p : "Far far away, behind the word mountains, far from the countries Vokalia Separated...1"
+                }
+            },
+            {
+                card_section2_2 :
+                {
+                i : "<i class='fas fa-cloud'></i>",
+                h2 : "Cloud Solutions",
+                p : "Far far away, behind the word mountains, far from the countries Vokalia Separated...2"
+                }
+            },
+            {
+                card_section2_3 :
+                {
+                i : "<i class='fas fa-tablet-alt'></i>",
+                h2 : "Website Design",
+                p : "Far far away, behind the word mountains, far from the countries Vokalia Separated...3"
+                }
+            },
+            {
+                card_section2_4 :
+                {
+                i : "<i class='far fa-clock'></i>",
+                h2 : "Online Marketing",
+                p : "Far far away, behind the word mountains, far from the countries Vokalia Separated...4"
+                }
+            }
+        ] 
     },
     methods: {
         next(){

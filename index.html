@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="button_read">READ MORE</button>
+                                <button class="button_section">READ MORE</button>
                                 <div class="social_selector flex">
                                     <ul class="social_icon_section1 flex">
                                         <li v-for="social in social_icon_section1">{{social}}</li>
@@ -66,16 +66,18 @@
             </section>
             <section class="section2">
                 <div class="container_section2 flex">
-                    <div class="container_text_section2">
+                    <div class="container_text_section2 flex">
                         <h2 v-html="text_section2.h2"></h2>
                         <div class="divider">&nbsp</div>
+                        <button class="button_section">VIEW ALL</button>
                     </div>
-                    <div class="container_card_section2">
-                        <div class="card_section2 flex">
-                            <div class="card"><i></i><h4>Speed Optimization</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
-                            <div class="card"><i></i><h4>Cloud Solutions</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
-                            <div class="card"><i></i><h4>Website Design</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
-                            <div class="card"><i></i><h4>Online Marketing</h4><p>Far far away, behind the word mountains, far from the countries Vokalia Separated...</p></div>
+                    <div class="container_card_section2 flex">
+                        <div class="card flex" v-for="text in card_section2">
+                            <div class="card_data" v-for="text in text">
+                                <span v-html="text.i"></span>
+                                <h2>{{text.h2}}</h2>
+                                <p>{{text.p}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
