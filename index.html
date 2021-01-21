@@ -138,14 +138,56 @@
                     </div>
                 </div>
             </section>
-            <section></section>
-            <section></section>
+            <section id="section6">
+                <div class="container_section6 flex">
+                    <div class="text_container_section6 flex">
+                        <h2 v-html="text_section6.h2"></h2>
+                        <div class="divider">&nbsp</div>
+                    </div>
+                    <div class="container_images_section6 flex">
+                        <div class="img_section6" v-for="img in img_section6">
+                            <img :src="img" alt="">
+                        </div>
+                    </div>
+                    <button class="button_section">VIEW ALL POST</button>
+                </div>
+            </section>
+            <section id="section7">
+                <div class="container_section7 flex">
+                    <div class="container_card_section7 flex">
+                        <div class="card left flex">
+                            <p>Are You Ready?</p>
+                            <h3>Start a New Project</h3>
+                            <div class="input_card_section7">
+                                <input type="text" class="email" placeholder="Enter Your Email Address">
+                                <input type="submit" value="SUBMIT" class="submit">
+                            </div>
+                        </div>
+                        <div class="card right flex">
+                            <p>What Are You Waiting for?</p>
+                            <h3>Let's Talk About Work</h3>
+                            <button class="button_section">START NOW</button>
+                        </div>
+                        <div class="container_img_section7 flex">
+                            <div class="img_section7"  v-for="img in img_section7">
+                                <img :src="img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section8">
+                <div class="container_section8 flex">
+                    
+                </div>
+            </section>
         </main>
         <footer>
-
         </footer>
 
-
+        <div class="scrollTop" @click="scrollTop()">
+            <i class="fas fa-arrow-up"></i>
+        </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

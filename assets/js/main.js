@@ -140,7 +140,24 @@ let app = new Vue ({
             img: "assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg",
             h4 : "<span class='agency_color'>LISSA DURBIN</span>",
             h5 : "Client"
-        }
+        },
+        text_section6 :
+        {
+            h2: "Latest News & Our <span class='agency_color'>Blog</span>"
+        },
+        img_section6 : [
+            "assets/img/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
+            "assets/img/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg",
+            "assets/img/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg",
+        ],
+        img_section7 : [
+            "assets/img/client-1-2x.png",
+            "assets/img/client-9-2x.png",
+            "assets/img/client-7-2x.png",
+            "assets/img/client-3-2x.png",
+            "assets/img/client-4-2x.png",
+            "assets/img/client-5-2x.png",
+        ]
     },
     methods: {
         next(){
@@ -148,6 +165,9 @@ let app = new Vue ({
             if(this.counter > this.img_section1.length -1){
                 this.counter = 0;
             }
+        },
+        scrollTop(){
+            window.scrollTo(0,0);
         }
     },
     created: function(){

@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* UTILITY */
 body{
@@ -50,6 +51,28 @@ button{
 span.agency_color{
     color: #00D9A6;
 }
+
+/* SCROLLTOP */
+.scrollTop{
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom:50px;
+    right: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.scrollTop:hover{
+    background-color: black;
+    color: white;
+}
+
+.scrollTop i{
+    font-size: 0.6em;
+    padding: 10px;
+}
+/* //SCROLLTOP */
 /* //UTILITY */
 
 /* HEADER */
@@ -317,7 +340,7 @@ header{
     margin: auto;
 }
 
-.card{
+.container_card_section2 .card{
     width: 45%;
     height: 45%;
     margin: auto;
@@ -328,7 +351,7 @@ header{
     align-items: center;
 }
 
-.card:hover{
+.container_card_section2 .card:hover{
     color:white;
     background: -webkit-linear-gradient(90deg,rgba(140,225,100,1), rgba(78,221,129,1));
     cursor: pointer;
@@ -572,5 +595,157 @@ header{
 }
 /* //SECTION5 */
 
+/* SECTION6 */
+
+.container_section6{
+    width: 1920px;
+    height: 1300px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container_section6 .text_container_section6{
+flex-direction: column;
+align-items: center;
+}
+
+.container_section6 .text_container_section6 h2{
+    font-size: 3.5em;
+    margin-top: 120px;
+}
+
+.container_section6 .text_container_section6 .divider{
+    margin: 40px 0;
+}
+
+.container_section6 .img_section6{
+    width: 515px;
+    height: 400px;
+    margin: 0 20px;
+}
+
+.container_section6 .img_section6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.container_section6 button{
+    margin-top: 70px;
+}
+
+/* //SECTION6 */
+
+/* SECTION7 */
+
+.container_section7{
+    width: 1920px;
+    height: 465px;
+    background-color: #f5f5f5;
+    justify-content: center;
+}
+
+.container_card_section7{
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.container_card_section7 .card.left, .container_card_section7 .card.right{
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    top: -50%;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    left: 150px;
+    background: radial-gradient(circle, rgb(37, 37, 37) 0%, rgba(61,61,61,1) 100%);
+}
+
+.right{
+    right: 150px;
+    background: rgb(140,225,100);
+    background: linear-gradient(270deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
+}
+
+.input_card_section7{
+    position: relative;
+}
+
+.container_card_section7{
+    justify-content: center;
+}
+
+.container_card_section7 .card{
+    color: white;
+}
+
+.container_card_section7 .card.left input.email{
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(61,61,61,1) 100%);
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 20px;
+    outline: none;
+    border-style: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.container_card_section7 .card.left input.submit{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-style: none;
+    background-color: rgb(0, 0, 0,0);
+    color: #aaaaaa;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.container_card_section7 .card.left input.submit:active{
+    top: 14px;
+    right: 19px;
+}
+
+.container_card_section7 .card p{
+    font-size: 1em;
+}
+
+.container_card_section7 .card h3{
+    font-size: 2.5em;
+    margin: 30px 0 65px;
+}
+
+.container_card_section7 .card.right button{
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(61,61,61,1) 100%);
+    box-shadow: none;
+}
+
+.container_card_section7 .card.right button:hover{
+    background: rgb(140,225,100);
+    background: linear-gradient(90deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
+    box-shadow: 10px 10px 30px rgb(140,225,100);
+}
+
+.container_img_section7{
+    align-items: flex-end;
+    width: 90%;
+   justify-content: space-around;
+}
+
+/* //SECTION7 */
+
+/* SECTION8 */
+
+
+/* //SECTION8 */
 
 /* //MAIN */
+
