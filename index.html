@@ -101,7 +101,32 @@
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section id="section4" class="flex">
+                <div class="container_section4 flex">
+                    <div class="container_text_section4">
+                        <div class="text_data_section4 flex">
+                            <div class="left_text_data_section4">
+                            <div class="divider">&nbsp</div>
+                            <h3 v-html="text_section4.h3"></h3>
+                            <div class="divider">&nbsp</div>
+                            </div>
+                            <p v-html="text_section4.p"></p>
+                        </div>
+                    </div>
+                    <div class="container_images_section4 flex">
+                        <div class="img_section4" v-for="(img,index) in img_section4">
+                            <img :src="img" alt="">
+                            <div class="overlay flex">
+                                <div class="text_overlay">
+                                    <h4>{{img_section4_text[index].h4}}</h4>
+                                    <p>{{img_section4_text[index].p}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button_section">READ MORE</button>
+                    </div>
+                </div>
+            </section>
             <section></section>
             <section></section>
             <section></section>

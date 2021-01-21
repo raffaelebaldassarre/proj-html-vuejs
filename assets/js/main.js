@@ -83,8 +83,57 @@ let app = new Vue ({
         text_section3 :
         {
             h3 : "learn more about <br> our <span class='agency_color'>mission</span>",
-            p : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.Separated they live in Bookmarksgrove.",
+            p : "Far far away, behind the word mountains, far from the countries Vokalia and<br> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove<br> right at the coast of the Semantics, a large language ocean.Separated they live<br> in Bookmarksgrove.",
         },
+        text_section4 :
+        {
+            h3 : "Our recent <span class='agency_color'>web design</span> &<br> ssome example of<br> past <span class='agency_color'>projects</span>",
+            p : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind<br> texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language<br> ocean.Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far from the<br> countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove."
+        },
+        img_section4 : [
+            "assets/img/ina-soulis-227104-unsplash-1024x1024.jpg",
+            "assets/img/sunisa-misa-531163-unsplash-1024x1024.jpg",
+            "assets/img/355H-1024x1024.jpg",
+            "assets/img/photo-1448932252197-d19750584e56-1024x1024.jpg",
+            "assets/img/business-competition-PB366D8-1024x1024.jpg",
+            "assets/img/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg",
+            "assets/img/aa9a4539-PQGJ7HU-1024x1024.jpg",
+            "assets/img/cody-davis-253928-unsplash-1024x1024.jpg"
+        ],
+        img_section4_text : [
+            {
+                h4 : "Title1",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title2",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title3",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title4",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title5",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title6",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title7",
+                p : "Branding - Marketing"
+            },
+            {
+                h4 : "Title8",
+                p : "Branding - Marketing"
+            }
+        ]
     },
     methods: {
         next(){
