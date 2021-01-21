@@ -146,9 +146,27 @@ let app = new Vue ({
             h2: "Latest News & Our <span class='agency_color'>Blog</span>"
         },
         img_section6 : [
-            "assets/img/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
-            "assets/img/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg",
-            "assets/img/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg",
+            {
+                1 : {
+                        img: "assets/img/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
+                        p: "May 24, 2018 by Alex",
+                        li: "Marketing Ideas"
+                }
+            },
+            {
+                2 : {
+                        img: "assets/img/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg",
+                        p: "May 24, 2018 by Alex",
+                        li: "Rest During Working Hours"
+                }
+            },
+            {
+                3 : {
+                        img: "assets/img/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg",
+                        p: "May 24, 2018 by Alex",
+                        li: "Develop Your Startup Idea"
+                }
+            },
         ],
         img_section7 : [
             "assets/img/client-1-2x.png",

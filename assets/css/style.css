@@ -602,7 +602,6 @@ header{
     height: 1300px;
     flex-direction: column;
     align-items: center;
-
 }
 .container_section6 .text_container_section6{
 flex-direction: column;
@@ -622,12 +621,46 @@ align-items: center;
     width: 515px;
     height: 400px;
     margin: 0 20px;
+    position: relative;
 }
 
 .container_section6 .img_section6 img{
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
+    box-shadow:20px 20px 50px grey;
+}
+
+.img_section6 .card_blog{
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    height: 110px;
+    bottom: -30px;
+    left: 10%;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    cursor: pointer;
+    transition: ease-in 0.4s;
+}
+
+.img_section6 .card_blog:hover{
+    background: linear-gradient(45deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
+    color: white;
+    transition: ease-in 0.4s;
+}
+
+.img_section6 .card_blog p{
+    font-size: 0.8em;
+    color: #aaaaaa;
+    padding-bottom: 10px;
+}
+
+.img_section6 .card_blog li{
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 .container_section6 button{

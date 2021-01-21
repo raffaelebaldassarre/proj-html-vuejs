@@ -145,8 +145,16 @@
                         <div class="divider">&nbsp</div>
                     </div>
                     <div class="container_images_section6 flex">
-                        <div class="img_section6" v-for="img in img_section6">
-                            <img :src="img" alt="">
+                        <div class="img_section6" v-for="blog in img_section6">
+                            <div v-for="img in blog">
+                                <img :src="img.img" alt="">
+                            </div>
+                            <div class="card_blog flex" v-for="img in blog">
+                                <p>{{img.p}}</p>
+                                <ul>
+                                    <li>{{img.li}}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <button class="button_section">VIEW ALL POST</button>
