@@ -515,4 +515,26 @@ header{
 }
 /* //SECTION4 */
 
+/* SECTION5 */
+
+.container_section5{
+    height: 825px;
+    width: 1920px;
+    background-image: url(../img/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container_section5 .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(51,51,51,0.9) 0%, rgba(61,61,61,0.9) 100%);
+}
+
+/* //SECTION5 */
+
+
 /* //MAIN */
