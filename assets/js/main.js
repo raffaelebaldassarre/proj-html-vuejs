@@ -133,7 +133,14 @@ let app = new Vue ({
                 h4 : "Title8",
                 p : "Branding - Marketing"
             }
-        ]
+        ],
+        text_section5 : 
+        {
+            h2: "When it comes to barbequing, there are two main schools of thought for the<br> techniques that you can use. Freshly scrambled eggs with applewood smoked bacon<br> - are amazing!",
+            img: "assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg",
+            h4 : "<span class='agency_color'>LISSA DURBIN</span>",
+            h5 : "Client"
+        }
     },
     methods: {
         next(){

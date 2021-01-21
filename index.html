@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -129,7 +129,13 @@
             </section>
             <section id="section5">
                 <div class="container_section5">
-                    <div class="overlay"></div>
+                    <div class="overlay flex">
+                        <i class="fas fa-quote-left"></i>
+                        <h2 v-html="text_section5.h2"></h2>
+                        <img :src="text_section5.img" alt="business-woman">
+                        <h4 v-html="text_section5.h4"></h4>
+                        <h5 v-html="text_section5.h5"></h5>
+                    </div>
                 </div>
             </section>
             <section></section>
