@@ -162,21 +162,21 @@ let app = new Vue ({
             {
                 link : {
                     h3 : "QUICk LINKS",
-                    p : [
-                     "1",
-                     "2",
-                     "3",
-                     "4",
-                     "5",
-                     "6"
+                    li : [
+                     "Careers",
+                     "News",
+                     "Terms of use",
+                     "Privacy Projects",
+                     "About",
+                     "Contact"
                     ]
                 },
                 contact : {
                     h3 : "CONTACT",
                     p : [
-                        "1",
-                        "2",
-                        "3",
+                        "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051",
+                        "info@yourdomain.com",
+                        "+99 (0) 101 0000 888",
                        ]
                 },
                 location : {
