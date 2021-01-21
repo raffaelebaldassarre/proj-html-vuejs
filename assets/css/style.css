@@ -748,7 +748,23 @@ align-items: center;
     width: 1920px;
     height: 580px;
     background-color: blue;
+    padding: 150px 100px;
 }
+
+.container_section8 .mission{
+    width: 25%;
+    height: 100%;
+}
+
+.link_container_section8{
+    width: 75%;
+    height: 100%;
+}
+
+.link_container_section8 .info{
+    width: calc(100% /3);
+}
+
 /* //SECTION8 */
 
 /* //MAIN */

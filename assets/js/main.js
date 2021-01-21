@@ -157,7 +157,36 @@ let app = new Vue ({
             "assets/img/client-3-2x.png",
             "assets/img/client-4-2x.png",
             "assets/img/client-5-2x.png",
-        ]
+        ],
+        info_section8 : [
+            {
+                link : {
+                    h3 : "QUICk LINKS",
+                    p : [
+                     "1",
+                     "2",
+                     "3",
+                     "4",
+                     "5",
+                     "6"
+                    ]
+                },
+                contact : {
+                    h3 : "CONTACT",
+                    p : [
+                        "1",
+                        "2",
+                        "3",
+                       ]
+                },
+                location : {
+                    h3 : "LOCATION ON MAP",
+                    img : [
+                         'assets/img/map.png',
+                       ]
+                }
+            }
+        ] 
     },
     methods: {
         next(){
