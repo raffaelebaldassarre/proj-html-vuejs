@@ -7,6 +7,11 @@ let app = new Vue ({
             number_phone2 : "88455438"
         },
         menu_nav : ["HOME","ABOUT","SERVICES","SHOWCASE","BLOG","CONTACT"],
+        social_icon : [
+            "<i class='fab fa-facebook-f'></i>",
+            "<i class='fab fa-twitter'></i>",
+            "<i class='fab fa-pinterest'></i>"
+        ],
         counter: 0,
         img_section1 : [
             "assets/img/Group-36-2x.png",
@@ -39,7 +44,7 @@ let app = new Vue ({
                 } 
             }
         ],
-        social_icon_section1 : [
+        social_link_section1 : [
             "FACEBOOK","INSTAGRAM","YOUTUBE","TWITTER"
         ],
         text_section2 : 
@@ -168,6 +173,18 @@ let app = new Vue ({
                 }
             },
         ],
+        card_section7_left : 
+        {
+            p : "Are You Ready?",
+            h3 : "Start a New Project",
+        }
+        ,
+        card_section7_right :
+        {
+            p : "What Are You Waiting for?",
+            h3 : "Let's Talk About Work",
+        }
+        ,
         img_section7 : [
             "assets/img/client-1-2x.png",
             "assets/img/client-9-2x.png",
@@ -176,6 +193,13 @@ let app = new Vue ({
             "assets/img/client-4-2x.png",
             "assets/img/client-5-2x.png",
         ],
+        mission_section8 :
+        {
+            img: [
+                "assets/img/cropped-Group-39-2x.png"
+                ],
+            p: "While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me."
+        },
         info_section8 : [
             {
                 link : {
@@ -204,7 +228,11 @@ let app = new Vue ({
                        ]
                 }
             }
-        ] 
+        ],
+        footer :
+        {
+            h4 : "© 2020 PHLOX BUSINESS THEME."
+        }
     },
     methods: {
         next(){

@@ -16,6 +16,12 @@ button{
     outline: none;
 }
 
+button:active{
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+}
+
 .flex{
     display: flex;
 }
@@ -52,7 +58,7 @@ span.agency_color{
     color: #00D9A6;
 }
 
-/* SCROLLTOP */
+/* TASTO SCROLLTOP */
 .scrollTop{
     background-color: #f9f9f9;
     position: fixed;
@@ -72,7 +78,50 @@ span.agency_color{
     font-size: 0.6em;
     padding: 10px;
 }
-/* //SCROLLTOP */
+/* //TASTO SCROLLTOP */
+
+/* TRANSIZIONE GRADIENT */
+button.big{
+    color: white;
+    font-size: 0.9em;
+    background: linear-gradient(90deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
+    height: 60px;
+    width: 150px;
+    border-style: none;
+    border-radius:50px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 30px rgb(140,225,100);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+button.big::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background: radial-gradient(circle, rgba(61,61,61,1) 50%, rgba(51,51,51,1) 100%);
+    transition: all 0.2s linear;
+}
+
+button.big:hover::before{
+    border-radius:30px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+button.big:hover{
+    box-shadow: none;
+}
+/* //TRANSIZIONE GRADIENT */
+
 /* //UTILITY */
 
 /* HEADER */
@@ -98,20 +147,20 @@ header{
     margin-left: 50px;
 }
 
-.social_icon_header {
+.social_icon {
     list-style: none;
     margin-right: 50px;
 }
 
-.social_icon_header  li{
+.social_icon li{
     color: white;
     cursor: pointer;
 }
-.social_icon_header  li:nth-child(2){
+.social_icon li:nth-child(2){
     padding: 0 20px;
 }
 
-.social_icon_header  li:hover{
+.social_icon li:hover{
     color: #00D9A6;
 }
 /* //NAV_HEADER_TOP */
@@ -146,25 +195,6 @@ header{
 
 .menu_nav li:first-child{
     font-weight: 400;
-}
-
-.nav_header_bottom button{
-    color: white;
-    font-size: 0.9em;
-    background: rgb(140,225,100);
-    background: linear-gradient(90deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
-    height: 60px;
-    width: 150px;
-    border-style: none;
-    border-radius:50px;
-    margin-right: 30px;
-    box-shadow: 10px 10px 30px rgb(140,225,100);
-    cursor: pointer;
-}
-
-.nav_header_bottom button:hover{
-    background: -webkit-linear-gradient(0deg, #3d3d3d, #333333);
-    box-shadow: none;
 }
 
 .search{
@@ -239,39 +269,23 @@ header{
 }
 /* //DATA */
 
-.button_section{
-    color: white;
-    background: linear-gradient(90deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
-    font-size: 0.9em;
-    height: 50px;
-    width: 180px;
-    border-style: none;
-    border-radius:50px;
-    cursor: pointer;
-    box-shadow: 10px 10px 30px rgb(140,225,100);
-}
-.button_section:hover{
-    background: -webkit-linear-gradient(0deg, #3d3d3d, #333333);
-    box-shadow: none;
-}
-
 .social_selector{
     padding-top: 150px;
     align-items: center;
 }
 
-.social_icon_section1{
+.social_link_section1{
     flex-direction: row;
     list-style: none;
     font-weight: 600;
     font-size: 1em;
 }
 
-.social_icon_section1 li{
+.social_link_section1 li{
     cursor: pointer;
 }
 
-.social_icon_section1 li:not(:last-child)::after{
+.social_link_section1 li:not(:last-child)::after{
     content: "-";
     margin: 0 5px;
     cursor:default;
@@ -636,20 +650,42 @@ align-items: center;
     position: absolute;
     width: 80%;
     height: 110px;
-    bottom: -30px;
+    bottom: 50px;
     left: 10%;
     border-radius: 5px;
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
     cursor: pointer;
-    transition: ease-in 0.4s;
+    transition: ease-in 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.img_section6 .card_blog::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background: linear-gradient(45deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
+    transition: ease-in 0.5s;
 }
 
 .img_section6 .card_blog:hover{
-    background: linear-gradient(45deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
     color: white;
-    transition: ease-in 0.4s;
+    transform: scale(1.1);
+}
+
+.img_section6 .card_blog:hover::before{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .img_section6 .card_blog p{
@@ -658,9 +694,29 @@ align-items: center;
     padding-bottom: 10px;
 }
 
+.img_section6 .card_blog ul {
+    list-style: none;
+  }
+  
+.img_section6 .card_blog ul li::before {
+    content: "\2022";
+    color: rgba(78,221,129,1);
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block; 
+    width: 1em;
+    transition: ease-in 0.5s;
+
+}
+
+.img_section6 .card_blog:hover ul li::before {
+    color: white;
+}
+
 .img_section6 .card_blog li{
     font-size: 1.4em;
     font-weight: 400;
+    align-items: center;
 }
 
 .container_section6 button{
@@ -855,23 +911,4 @@ align-items: center;
     font-size: 0.8em;
     margin-left: 50px;
 }
-
-.social_icon_footer {
-    list-style: none;
-    margin-right: 50px;
-}
-
-.social_icon_footer  li{
-    color: white;
-    cursor: pointer;
-}
-.social_icon_footer  li:nth-child(2){
-    padding: 0 20px;
-}
-
-.social_icon_footer  li:hover{
-    color: #00D9A6;
-}
 /* //FOOTER */
-
-

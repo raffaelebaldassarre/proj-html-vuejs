@@ -11,19 +11,21 @@
 </head>
 <body>
     <div id="app">
+        <!-- HEADER -->
         <header>
+            <!-- NAV HEADER TOP -->
             <div class="nav_header_top flex">
                 <p class="number_phone">
                     <span>{{number_phone.prefix}}</span>
                     <span>{{number_phone.number_phone1}}</span>
                     <span>{{number_phone.number_phone1}}</span>
                 </p>
-                <ul class="social_icon_header flex">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-pinterest"></i></li>
+                <ul class="social_icon flex"> 
+                    <li v-for="icon in social_icon" v-html="icon"></li>
                  </ul>
             </div>
+            <!-- //NAV HEADER TOP -->
+            <!-- NAV HEADER BOTTOM -->
             <div class="nav_header_bottom flex">
                 <img src="assets/img/cropped-Group-39-2x.png" alt="Logo" class="logo">
                 <div>
@@ -32,15 +34,20 @@
                     </ul>
                 </div>
                 <div>
-                    <button>Purchase</button>
+                    <button class="big">Purchase</button>
                     <i class="fas fa-search search"></i>
                 </div>
             </div>
+            <!-- //NAV HEADER BOTTOM -->
         </header>
+        <!-- //HEADER -->
+        <!-- MAIN -->
         <main class="main_container">
+            <!-- SECTION1 -->
             <section id="section1">
                 <div class="container_section1 flex">
                     <div class="text_section1">
+                        <!-- CAROUSEL IMMAGINI E TESTO-->
                         <img :src="img_section1[counter]" alt="" class="active">
                             <div class="text_data_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
                                 <div v-for="text in text" class="data_section1 flex">
@@ -50,26 +57,29 @@
                                     <p v-html="text.p"></p>
                                 </div>
                             </div>
-                            <div>
-                                <button class="button_section">READ MORE</button>
-                                <div class="social_selector flex">
-                                    <ul class="social_icon_section1 flex">
-                                        <li v-for="social in social_icon_section1">{{social}}</li>
-                                    </ul>
-                                    <div class="selector_img_section1 flex">
-                                        <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
-                                    </div>
-                                </div>
+                        <!-- //CAROUSEL IMMAGINI E TESTO-->  
+                        <button class="big">READ MORE</button>
+                        <div class="social_selector flex">
+                            <ul class="social_link_section1 flex">
+                                <li v-for="social in social_link_section1">{{social}}</li>
+                            </ul>
+                            <!-- SELECTOR COLLEGATO AL COROUSEL-->
+                            <div class="selector_img_section1 flex">
+                                <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
                             </div>
+                            <!-- //SELECTOR COLLEGATO AL COROUSEL-->
+                        </div>
                     </div>
                 </div>
             </section>
+            <!-- //SECTION1 -->
+            <!-- SECTION2 -->
             <section id="section2">
                 <div class="container_section2 flex">
                     <div class="container_text_section2 flex">
                         <h2 v-html="text_section2.h2"></h2>
                         <div class="divider">&nbsp</div>
-                        <button class="button_section">VIEW ALL</button>
+                        <button class="big">VIEW ALL</button>
                     </div>
                     <div class="container_card_section2 flex">
                         <div class="card flex" v-for="text in card_section2">
@@ -82,6 +92,8 @@
                     </div>
                 </div>
             </section>
+            <!-- //SECTION2 -->
+            <!-- SECTION3 -->
             <section id="section3">
                 <div class="container_section3 flex">
                     <div class="container_img_section3">
@@ -96,11 +108,13 @@
                             <h3 v-html="text_section3.h3"></h3>
                             <div class="divider">&nbsp</div>
                             <p v-html="text_section3.p"></p>
-                            <button class="button_section">READ MORE</button>
+                            <button class="big">READ MORE</button>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- //SECTION3 -->
+            <!-- SECTION4 -->
             <section id="section4" class="flex">
                 <div class="container_section4 flex">
                     <div class="container_text_section4">
@@ -123,10 +137,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="button_section">READ MORE</button>
+                        <button class="big">READ MORE</button>
                     </div>
                 </div>
             </section>
+            <!-- //SECTION4 -->
+            <!-- SECTION5 -->
             <section id="section5">
                 <div class="container_section5">
                     <div class="overlay flex">
@@ -138,6 +154,8 @@
                     </div>
                 </div>
             </section>
+            <!-- //SECTION5 -->
+            <!-- SECTION6 -->
             <section id="section6">
                 <div class="container_section6 flex">
                     <div class="text_container_section6 flex">
@@ -152,29 +170,31 @@
                             <div class="card_blog flex" v-for="img in blog">
                                 <p>{{img.p}}</p>
                                 <ul>
-                                    <li>{{img.li}}</li>
+                                    <li class="flex">{{img.li}}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <button class="button_section">VIEW ALL POST</button>
+                    <button class="big">VIEW ALL POST</button>
                 </div>
             </section>
+            <!-- //SECTION6 -->
+            <!-- SECTION7 -->
             <section id="section7">
                 <div class="container_section7 flex">
                     <div class="container_card_section7 flex">
                         <div class="card left flex">
-                            <p>Are You Ready?</p>
-                            <h3>Start a New Project</h3>
+                            <p>{{card_section7_left.p}}</p>
+                            <h3>{{card_section7_left.h3}}</h3>
                             <div class="input_card_section7">
                                 <input type="text" class="email" placeholder="Enter Your Email Address">
                                 <input type="submit" value="SUBMIT" class="submit">
                             </div>
                         </div>
                         <div class="card right flex">
-                            <p>What Are You Waiting for?</p>
-                            <h3>Let's Talk About Work</h3>
-                            <button class="button_section">START NOW</button>
+                            <p>{{card_section7_right.p}}</p>
+                            <h3>{{card_section7_right.h3}}</h3>
+                            <button class="big">START NOW</button>
                         </div>
                         <div class="container_img_section7 flex">
                             <div class="img_section7"  v-for="img in img_section7">
@@ -184,11 +204,13 @@
                     </div>
                 </div>
             </section>
+            <!-- //SECTION7 -->
+            <!-- SECTION8 -->
             <section id="section8">
                 <div class="container_section8 flex">
                     <div class="mission flex">
-                        <img src="assets/img/cropped-Group-39-2x.png" alt="">
-                        <p>While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me.</p>
+                        <img :src="mission_section8.img" alt="">
+                        <p>{{mission_section8.p}}</p>
                     </div>
                     <div class="link_container_section8 flex" v-for="info in info_section8">
                         <div class="info" v-for="info in info">
@@ -207,20 +229,24 @@
                     </div>
                 </div>
             </section>
+            <!-- //SECTION8 -->
         </main>
+        <!-- //MAIN -->
+        <!-- FOOTER -->
         <footer>
             <div class="container_footer flex">
-                <h4>© 2020 PHLOX BUSINESS THEME.</h4>
-                <ul class="social_icon_header flex">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-pinterest"></i></li>
+                <h4>{{footer.h4}}</h4>
+                <ul class="social_icon flex"> 
+                    <li v-for="icon in social_icon" v-html="icon"></li>
                  </ul>
             </div>
         </footer>
+        <!-- //FOOTER -->
+        <!-- BUTTON SCROLLTOP -->
         <div class="scrollTop" @click="scrollTop()">
             <i class="fas fa-arrow-up"></i>
         </div>
+        <!-- //BUTTON SCROLLTOP -->
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
