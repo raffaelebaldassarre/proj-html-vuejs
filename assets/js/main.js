@@ -200,7 +200,7 @@ let app = new Vue ({
                 ],
             p: "While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me."
         },
-        info_section8 : [
+        info_section8 : 
             {
                 link : {
                     h3 : "QUICk LINKS",
@@ -228,7 +228,7 @@ let app = new Vue ({
                        ]
                 }
             }
-        ],
+        ,
         footer :
         {
             h4 : "© 2020 PHLOX BUSINESS THEME."

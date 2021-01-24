@@ -1,0 +1,148 @@
+/* sm */
+/* @media (max-width:575px) {
+    h1{font-size: 3em;}
+    h2{font-size: 2.3em;}
+    h3{font-size: 2em;}
+    h4{font-size: 1.65em}
+    h5{font-size: 1.1em;}
+    p{font-size: 0.7em}
+} */
+
+/* md */
+/* @media (max-width:767px) {
+    h1{font-size: 3em;}
+    h2{font-size: 2.3em;}
+    h3{font-size: 2em;}
+    h4{font-size: 1.65em}
+    h5{font-size: 1.1em;}
+    p{font-size: 0.7em}
+} */
+
+/* lg */
+/* @media (min-width:991px) {
+    h1{font-size: 3em;}
+    h2{font-size: 2.3em;}
+    h3{font-size: 2em;}
+    h4{font-size: 1.65em}
+    h5{font-size: 1.1em;}
+    p{font-size: 0.7em}
+}*/
+
+/* xl */
+@media (min-width:1199px) {
+    h1{font-size: 3.37em}
+    h2{font-size: 2.62em}
+    h3{font-size: 2.25em}
+    h4{font-size: 1.87em}
+    h5{font-size: 1.12em}
+    p{font-size: 0.75em}
+    .main_container{
+        margin-top: 130px;
+    }
+    .nav_header_top{
+        height: 30px;
+    }
+    .nav_header_bottom{
+        height: 100px;
+    }
+    .data_section1 p{
+        font-size: 0.9em;
+    }
+    .social_selector{
+        padding-top: 12%;
+    }
+    .container_section2{
+        height:840px;
+    }
+    .container_section3{
+        height:840px;
+    }
+    #section4{
+        height:1339px;
+    }
+    .container_section5{
+        height: 656.25px;
+    }
+    .container_section6{
+        height: 975px;
+    }
+    .container_section6 .text_container_section6 h2{
+        margin-top: 90px;
+    }
+    .container_section7{
+        height: 348.7px;
+    }
+    .container_card_section7{
+        height: 262.5px;
+    }
+    .container_card_section7 .card.left input.email{
+        width: 400px;
+        height: 40px;
+    }
+    .container_section8{
+        height: 450px;
+    }
+    .container_footer{
+        height: 100px;
+    }
+}
+
+/* xxl */
+@media (min-width:1441px) { 
+    h1{font-size: 4.5em}
+    h2{font-size: 3.5em}
+    h3{font-size: 3em}
+    h4{font-size: 2.5em}
+    h5{font-size: 1.5em}
+    p{font-size: 1em}
+    .main_container{
+        margin-top: 160px;
+    }
+    .nav_header_top{
+        height: 40px;
+    }
+    .nav_header_bottom{
+        height: 120px;
+    }
+    .data_section1 p{
+        font-size: 1.1em;
+        width: 88%;
+    }
+    .social_selector{
+        padding: 18% 0 5%;
+    }
+    .container_section2{
+        height:1120px;
+    }
+    .container_section3{
+        height:1120px;
+    }
+    #section4{
+        height:1785px;
+    }
+    .container_section5{
+        height: 825px;
+    }
+    .container_section6{
+        height: 1300px;
+    }
+    .container_section6 .text_container_section6 h2{
+        margin-top: 120px;
+    }
+    .container_section7{
+        height: 465px;
+    }
+    .container_card_section7{
+        height: 350px;
+    }
+    .container_card_section7 .card.left input.email{
+        width: 500px;
+        height: 50px;
+    }
+    .container_section8{
+        height: 600px;
+    }
+    .container_footer{
+        height: 120px;
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phlox Business</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
@@ -46,18 +47,16 @@
             <!-- SECTION1 -->
             <section id="section1">
                 <div class="container_section1 flex">
+                    <!-- CAROUSEL IMMAGINI E TESTO-->
                     <div class="text_section1">
-                        <!-- CAROUSEL IMMAGINI E TESTO-->
-                        <img :src="img_section1[counter]" alt="" class="active">
                             <div class="text_data_section1" v-for="(text,index) in text_section1" :class="(index === counter)? 'active': '' " >
                                 <div v-for="text in text" class="data_section1 flex">
-                                    <h4>{{text.h4}}</h4>
+                                    <h5>{{text.h4}}</h5>
                                     <h1 v-html="text.h1"></h1>
                                     <div class="divider">&nbsp</div>
                                     <p v-html="text.p"></p>
                                 </div>
                             </div>
-                        <!-- //CAROUSEL IMMAGINI E TESTO-->  
                         <button class="big">READ MORE</button>
                         <div class="social_selector flex">
                             <ul class="social_link_section1 flex">
@@ -68,8 +67,12 @@
                                 <button class="button_selector" v-for="(img,index) in img_section1" :class="(index === counter)? 'active': '' " @click= "counter=index">0{{index+1}}</button>
                             </div>
                             <!-- //SELECTOR COLLEGATO AL COROUSEL-->
-                        </div>
+                        </div> 
                     </div>
+                    <div class="container_image_section1">
+                        <img :src="img_section1[counter]" alt="" class="active">
+                    </div>
+                    <!-- //CAROUSEL IMMAGINI E TESTO-->
                 </div>
             </section>
             <!-- //SECTION1 -->
@@ -85,7 +88,7 @@
                         <div class="card flex" v-for="text in card_section2">
                             <div class="card_data" v-for="text in text">
                                 <span v-html="text.i"></span>
-                                <h2>{{text.h2}}</h2>
+                                <p>{{text.h2}}</p>
                                 <p>{{text.p}}</p>
                             </div>
                         </div>
@@ -147,10 +150,10 @@
                 <div class="container_section5">
                     <div class="overlay flex">
                         <i class="fas fa-quote-left"></i>
-                        <h2 v-html="text_section5.h2"></h2>
+                        <h5 v-html="text_section5.h2"></h5>
                         <img :src="text_section5.img" alt="business-woman">
                         <h4 v-html="text_section5.h4"></h4>
-                        <h5 v-html="text_section5.h5"></h5>
+                        <p v-html="text_section5.h5"></p>
                     </div>
                 </div>
             </section>
@@ -185,7 +188,7 @@
                     <div class="container_card_section7 flex">
                         <div class="card left flex">
                             <p>{{card_section7_left.p}}</p>
-                            <h3>{{card_section7_left.h3}}</h3>
+                            <h4>{{card_section7_left.h3}}</h4>
                             <div class="input_card_section7">
                                 <input type="text" class="email" placeholder="Enter Your Email Address">
                                 <input type="submit" value="SUBMIT" class="submit">
@@ -193,7 +196,7 @@
                         </div>
                         <div class="card right flex">
                             <p>{{card_section7_right.p}}</p>
-                            <h3>{{card_section7_right.h3}}</h3>
+                            <h4>{{card_section7_right.h3}}</h4>
                             <button class="big">START NOW</button>
                         </div>
                         <div class="container_img_section7 flex">
@@ -212,9 +215,9 @@
                         <img :src="mission_section8.img" alt="">
                         <p>{{mission_section8.p}}</p>
                     </div>
-                    <div class="link_container_section8 flex" v-for="info in info_section8">
-                        <div class="info" v-for="info in info">
-                            <h3 v-html="info.h3"></h3>
+                    <div class="link_container_section8 flex">
+                        <div class="info" v-for="info in info_section8">
+                            <h5 v-html="info.h3"></h5>
                             <div class="divider">&nbsp</div>
                             <ul class="link" v-for="link in info.li">
                                 <li>{{link}}</li>

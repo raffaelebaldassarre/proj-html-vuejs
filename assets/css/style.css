@@ -8,8 +8,9 @@
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    max-width: 1920px;
     margin: auto;
+    min-width: 1200px;
+    max-width: 2000px;
 }
 
 button{
@@ -62,7 +63,7 @@ span.agency_color{
 .scrollTop{
     background-color: #f9f9f9;
     position: fixed;
-    bottom:50px;
+    bottom:10px;
     right: 50px;
     cursor: pointer;
     border: 1px solid black;
@@ -131,11 +132,11 @@ header{
     position: fixed;
     top: 0;
     width: 1920px;
+    min-width: 1100px;
 }
 
 /* NAV_HEADER_TOP */
 .nav_header_top{
-    height: 40px;
     background: rgb(51,51,51);
     background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(61,61,61,1) 100%);
     align-items: center;
@@ -168,8 +169,7 @@ header{
 
 /* NAV_HEADER_BOTTOM */
 .nav_header_bottom{
-    background-color: white;
-    height: 120px;
+     background-color: white;
     align-items: center;
     justify-content: space-between;
 }
@@ -207,31 +207,30 @@ header{
 /* //HEADER */
 
 /* MAIN */
-.main_container{
-    margin-top: 160px;
-}
 
 /* SECTION1 */
 .container_section1{
-    width: 1920px;
-    height:1120px;
+    width: 100%;
     background-color: #f5f5f5;
-    position: relative;
     overflow: hidden;
-    flex-direction: column;
 }
 
-.container_section1 img{
+.container_image_section1{
+    width: 50%;
+    position: relative;
+}
+
+.container_image_section1 img{
     z-index: 1;
-    max-width: 1430px;
-    min-width: 950px;
+    width: 150%;
     position: absolute;
-    top: -50px;
-    right: -300px;
+    left:-17.5%;
+    top:-4.8%
 }
 
 .text_section1{
-    padding-left: 100px;
+    padding: 9% 0 10% 100px;
+    width: 50%;
 }
 
 .text_data_section1{
@@ -245,20 +244,17 @@ header{
 /* DATA */
 .data_section1{
     flex-direction: column;
-    padding-top: 175px;
 }
 
-.data_section1 h4{
+.data_section1 h5{
     background: -webkit-linear-gradient(90deg,rgba(140,225,100,1), rgba(78,221,129,1));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 5px;
-    font-size: 1.5em;
 }
 
 .data_section1 h1{
-    font-size: 4.5em;
     padding: 30px 0;
 }
 
@@ -270,7 +266,6 @@ header{
 /* //DATA */
 
 .social_selector{
-    padding-top: 150px;
     align-items: center;
 }
 
@@ -292,13 +287,15 @@ header{
 }
 
 .selector_img_section1{
-    z-index: 1;
+    z-index: 2;
     border-radius: 25px;
     background: -webkit-linear-gradient(0deg, #3d3d3d, #333333);
     padding: 2px;
-    margin-left: 400px;
     justify-content: center;
     width: 180px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .selector_img_section1 .button_selector{
@@ -324,13 +321,12 @@ header{
 
 /* SECTION2 */
 .container_section2{
-    height:1120px;
-    width: 1920px;
-    padding: 0 100px;
+    width: 100%;
+    padding: 0 5.2%;
 }
 
 .container_text_section2{
-    width: 768px;
+    width: 45%;
     height: 70%;
     flex-direction: column;
     justify-content: center;
@@ -338,7 +334,6 @@ header{
 }
 
 .container_text_section2 h2{
-    font-size: 3.5em;
     padding-bottom: 30px;
 }
 
@@ -375,8 +370,8 @@ header{
     width: 75%;
 }
 
-.card_data h2{
-    padding: 30px 0;
+.card_data p{
+    padding: 10% 0;
     font-weight: 400;
 }
 
@@ -388,8 +383,7 @@ header{
 /* SECTION3 */
 
 .container_section3{
-    height:1120px;
-    width: 1920px;
+    width: 100%;
     background-color: #f5f5f5;
     align-items: center;
     padding: 0 100px;
@@ -439,7 +433,6 @@ header{
 }
 
 .data_text_section3 h3{
-    font-size: 3em;
     padding: 30px 0;
 }
 
@@ -452,20 +445,19 @@ header{
 
 /* SECTION4 */
 #section4{
-    height:1785px;
-    width: 1920px;
+    width: 100%;
     align-items: center;
 }
 
 .container_section4{
-    width: 1920px;
+    width: 100%;
     flex-direction: column;
 }
 
 .container_text_section4{
-    height: 290px;
+    height: 16.25%;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 5.21%;
 }
 
 .left_text_data_section4{
@@ -473,7 +465,6 @@ header{
 }
 
 .left_text_data_section4 h3{
-    font-size: 3em;
     padding: 50px 0;
 }
 
@@ -490,16 +481,15 @@ header{
 }
 
 .container_images_section4{
-    padding: 80px;
+    padding: 4.48%;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .img_section4{
-    width: 430px;
-    height:430px;
-    margin: 5px;
+    width: 24.50%;
+    margin: 0.25%;
     transition: ease 0.6s;
     position: relative;
 }
@@ -513,10 +503,10 @@ header{
 .img_section4 .overlay{
     position: absolute;
     top: 0;
-    padding: 5px;
+    padding: 0.25%;
     background: linear-gradient(45deg, rgba(140,225,100,0.5) 0%, rgba(78,221,129,0.5) 30%, rgba(16,218,160,0.5) 100%);
-    width: 430px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     padding: 50px;
     display: none;
@@ -538,7 +528,6 @@ header{
 }
 
 .img_section4 .overlay .text_overlay h4{
-    font-size: 3em;
     color: white;
 }
 
@@ -555,8 +544,7 @@ header{
 /* SECTION5 */
 
 .container_section5{
-    height: 825px;
-    width: 1920px;
+    width: 100%;
     background-image: url(../img/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -581,11 +569,10 @@ header{
     padding-bottom: 50px;
 }
 
-.container_section5 .overlay h2{
+.container_section5 .overlay h5{
     color: #f9f9f9;
     text-align: center;
     font-weight: 300;
-    line-height: 2em;
 }
 
 .container_section5 .overlay img{
@@ -597,13 +584,11 @@ header{
 }
 
 .container_section5 .overlay h4{
-    font-size: 1.5em;
     font-weight: 300;
 }
 
-.container_section5 .overlay h5{
+.container_section5 .overlay p{
     color: #f9f9f9;
-    font-size: 1em;
     font-weight: 300;
     padding-top: 15px;
 }
@@ -612,8 +597,7 @@ header{
 /* SECTION6 */
 
 .container_section6{
-    width: 1920px;
-    height: 1300px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -622,18 +606,16 @@ flex-direction: column;
 align-items: center;
 }
 
-.container_section6 .text_container_section6 h2{
-    font-size: 3.5em;
-    margin-top: 120px;
-}
-
 .container_section6 .text_container_section6 .divider{
     margin: 40px 0;
 }
 
+.container_images_section6{
+    justify-content: center;
+}
+
 .container_section6 .img_section6{
-    width: 515px;
-    height: 400px;
+    width: 27%;
     margin: 0 20px;
     position: relative;
 }
@@ -728,20 +710,18 @@ align-items: center;
 /* SECTION7 */
 
 .container_section7{
-    width: 1920px;
-    height: 465px;
+    width: 100%;
     background-color: #f5f5f5;
     justify-content: center;
 }
 
 .container_card_section7{
-    height: 350px;
     width: 100%;
     position: relative;
 }
 
 .container_card_section7 .card.left, .container_card_section7 .card.right{
-    width: 800px;
+    width: 41.67%;
     height: 100%;
     position: absolute;
     top: -50%;
@@ -752,12 +732,12 @@ align-items: center;
 }
 
 .left{
-    left: 150px;
+    left: 7.81%;
     background: radial-gradient(circle, rgb(37, 37, 37) 0%, rgba(61,61,61,1) 100%);
 }
 
 .right{
-    right: 150px;
+    right: 7.81%;
     background: rgb(140,225,100);
     background: linear-gradient(270deg, rgba(140,225,100,1) 0%, rgba(78,221,129,1) 30%, rgba(16,218,160,1) 100%);
 }
@@ -777,7 +757,6 @@ align-items: center;
 .container_card_section7 .card.left input.email{
     background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(61,61,61,1) 100%);
     width: 500px;
-    height: 50px;
     border-radius: 25px;
     padding: 20px;
     outline: none;
@@ -807,9 +786,8 @@ align-items: center;
     font-size: 1em;
 }
 
-.container_card_section7 .card h3{
-    font-size: 2.5em;
-    margin: 30px 0 65px;
+.container_card_section7 .card h4{
+    margin: 4.575% 0 8.57%;
 }
 
 .container_card_section7 .card.right button{
@@ -834,8 +812,8 @@ align-items: center;
 /* SECTION8 */
 
 .container_section8{
-    width: 1920px;
-    padding: 150px 100px;
+    width: 100%;
+    padding: 7.81% 5.21%;
 }
 
 .container_section8 .mission{
@@ -863,8 +841,7 @@ align-items: center;
     width: calc(100% /3);
 }
 
-.link_container_section8 .info h3{
-    font-size: 1.4em;
+.link_container_section8 .info h5{
     margin-bottom: 20px;
 }
 
@@ -892,6 +869,7 @@ align-items: center;
 
 .link_container_section8 .info img{
     cursor: grab;
+    width: 100%;
 }
 /* //SECTION8 */
 
@@ -899,7 +877,7 @@ align-items: center;
 
 /* FOOTER */
 .container_footer{
-    width: 1920px;
+    width: 100%;
     height: 120px;
     background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(61,61,61,1) 100%);
     align-items: center;
